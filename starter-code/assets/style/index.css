@@ -1,0 +1,99 @@
+/* -------------------- */
+/*     Custom Properties */
+
+/* -------------------- */
+
+:root {
+    --clrs-dark: 230 35% 7%;
+    --clrs-light : 231 77% 90%;
+    --clrs-white : 0 0% 100%;
+}
+
+
+
+/*  ------------------- */
+/*        RESETTING     */
+/*  ------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h6,
+
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* setup up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+/* Making form elements easier as they dont inherit the fonts */
+input,
+button,
+textarea, 
+select {
+    font: inherit;
+}
+
+/* Utility classes */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem );
+
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container{
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+
+/* Colors */
+
+.bg-dark {
+    background-color: hsl(var(--clrs-dark));
+}
+.bg-light {
+    background-color: hsl(var(--clrs-light));
+}
+.bg-white {
+    background-color: hsl(var(--clrs-white));
+}
+.text-dark {
+    color: hsl(var(--clrs-dark));
+}
+.text-light {
+    color: hsl(var(--clrs-light));
+}
+.text-white {
+    color: hsl(var(--clrs-white));
+}
+
+.custom-box {
+    background-color: hsl(var(--clrs-light) / .5);
+}
