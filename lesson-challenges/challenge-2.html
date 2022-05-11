@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../starter-code/assets/style/index.css">
+
+
+</head>
+
+
+<!-- Solved challenge 2 , giving required colors to the given boxes and changing the alpha value of third without visiting the index css -->
+
+<body class="bg-dark text-light">
+    
+    <style>
+        .box {
+            width: 25%;
+            border-radius: 10px;
+            height: 25vh;
+            padding: 1vw;
+         }
+    </style>
+
+    <div class="container">
+        <h1 class="text-light">#1 <span class="text-white"> COLORS</span> </h1>
+        <div class="flex">
+
+            <div class="box bg-light text-dark ">
+                light blue bg, with dark text
+            </div>
+
+
+            <div class="box bg-white text-dark">
+                white bg, with dark text
+            </div>
+
+            <div class="box custom-box text-dark">
+                light blue bg with a 20% alpha and text dark
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
